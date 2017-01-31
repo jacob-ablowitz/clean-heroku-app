@@ -5,13 +5,22 @@ ruby '2.1.2' # Heroku stack is on ruby v2.1.2 as of 1/24/17
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 
+
 #### [Database] ####
 # Use Postgres as the database for Active Record
 gem 'pg'
 
+
+#### [File Handling] ####
+# UNCOMMENT IF FILE UPLOADS ARE NEEDED
+#
+# gem 'carrierwave', '~> 1.0'
+
+
+
 #### [Assets] ####
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -26,6 +35,10 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-turbolinks'
+# Use bootstrap for front end
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'autoprefixer-rails'
+
 
 
 #### [Other] ####
@@ -41,6 +54,7 @@ group :development do
      gem 'spring'
      gem 'better_errors'
      gem 'pry-rails'
+     gem 'binding_of_caller'
 end
 
 #### [Prod-only gems] ####

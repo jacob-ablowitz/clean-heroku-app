@@ -4,14 +4,28 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+# Ignore bundler config / Environment normalization:
+/.bundle
+/vendor/bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Ignore SASS cache files
+
+/app/stylesheets/.sass-cache/*
+/app/stylesheets/theme/.sass-cache/*
+*.scssc
 
 *.rbc
 capybara-*.html
 .rspec
-/log
-/tmp
-/db/*.sqlite3
-/db/*.sqlite3-journal
+
 /public/system
 /coverage/
 /spec/tmp
@@ -26,10 +40,6 @@ pickle-email-*.html
 # dotenv
 # TODO Comment out this rule if environment variables can be committed
 .env
-
-## Environment normalization:
-/.bundle
-/vendor/bundle
 
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
